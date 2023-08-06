@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samet Koyuncu | iOS Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <input type="radio" name="theme" id="space-black" checked="checked">
+
+    <div class="phone">
+        <div class="buttons">
+            <div class="left">
+                <div class="button"></div>
+                <div class="button"></div>
+                <div class="button"></div>
+            </div>
+            <div class="right">
+                <div class="button"></div>
+            </div>
+        </div>
+        <div class="camera"></div>
+        <div class="screen-container">
+            <div class="bg">
+                <div class="profile-card">
+                    <div class="image">
+                        <img src="profile-img.jpg" alt="profile picture">
+                    </div>
+                    <div class="full-name">Samet Koyuncu</div>
+                    <div class="job-title">iOS Developer</div>
+                    <div class="contact-buttons">
+                        <div class="contact-button">
+                            <a href="https://github.com/sametkoyuncu" target="_blank" rel="noopener noreferrer">
+                                <i class="bi bi-github"></i>
+                                <span class="text">GitHub</span>
+                            </a>
+                        </div>
+                        <div class="contact-button">
+                            <a href="https://www.linkedin.com/in/samet-koyuncu/" target="_blank"
+                                rel="noopener noreferrer">
+                                <i class="bi bi-linkedin"></i>
+                                <span class="text">LinkedIn</span>
+                            </a>
+                        </div>
+                        <div class="contact-button">
+                            <a href="https://medium.com/@sametkoyuncu" target="_blank" rel="noopener noreferrer">
+                                <i class="bi bi-medium"></i>
+                                <span class="text">Medium</span>
+                            </a>
+                        </div>
+                        <div class="contact-button">
+                            <a href="mailto:sametkoyuncu@live.com">
+                                <i class="bi bi-envelope-fill"></i>
+                                <span class="text">E-posta</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="section-container">
+                        <div class="section-title">Konum</div>
+                        <div class="section-content">
+                            <i class="bi bi-geo-alt"></i>
+                            Istanbul, TURKIYE
+                        </div>
+                    </div>
+                    <div class="section-container">
+                        <div class="section-title">Bağlantılar</div>
+                        <div class="section-content">
+                            <a onclick="openModal('hakkimda')">
+                                <i class="bi bi-person"></i>
+                                Hakkımda
+                            </a>
+                        </div>
+                        <div class="section-content">
+                            <a onclick="openModal('projelerim')">
+                                <i class="bi bi-hammer"></i>
+                                Projelerim
+                            </a>
+                        </div>
+                        <div class="section-content">
+                            <a onclick="openModal('yazilarim')">
+                                <i class="bi bi-book"></i>
+                                Yazılarım
+                            </a>
+                        </div>
+                        <div class="section-content">
+                            <a href="javascript:void(0);">
+                                <i class="bi bi-file-earmark-arrow-down"></i>
+                                CV İndir (yakında)
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="notch-container" tabindex="0">
+                <div class="notch">
+                </div>
+            </div>
+            <!-- Modals -->
+            <!-- Hakkımda -->
+            <!-- Add the modal here -->
+            <div class="modal" id="hakkimda">
+                <!-- Add the modal content here -->
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('hakkimda')">
+                        <i class="bi bi-x-circle-fill"></i>
+                    </span>
+                    <h2>Giriş</h2>
+                    <div class="model-content-p">Merhaba ben Samet. Bilgisayar mühendisliği mezunu, iOS Geliştirici ve
+                        küçükbaş hayvancılıkla
+                        uğraşan biriyim. Hafta içleri yazılım alanında çalışıp, hafta sonları koyunlara bakıyorum. İşim
+                        gereği çoğunlukla Swift dili ile geliştirmeler yapsam da JavaScript (❤️) ile uğraşmayı
+                        seviyorum..</div>
+                    <h2>Tecrübe</h2>
+                    <div class="job-time">
+                        Kasım 2022 - Halen
+                    </div>
+                    <div class="company">FMSS Bilişim Teknoloji</div>
+                    <div class="company-description">Turkcell firmasına danışman iOS Developer olarak hizmet veriyorum.
+                        Firmanın uygulamalarında kullanılmak üzere geliştirilen bir SDK projesinde yer alıyorum.</div>
+                    <h2>Eğitim</h2>
+                    <div class="job-time">
+                        2016 - 2020
+                    </div>
+                    <div class="company">Sivas Cumhuriyet Üniversitesi</div>
+                    <div class="company-description">Bilgisayar Mühendisliği</div>
+                </div>
+            </div>
+
+            <!-- Projelerim -->
+            <div class="modal" id="projelerim">
+                <!-- Add the modal content here -->
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('projelerim')">
+                        <i class="bi bi-x-circle-fill"></i>
+                    </span>
+                    <h2>SideTown</h2>
+                    <div class="model-content-p">iOS için geliştirmiş olduğum yandan açılır menü kütüphanesi.</div>
+                    <a href="https://github.com/sametkoyuncu/SideTown" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-github"></i>&nbsp;Github
+                    </a>
+                    <h2>ColorTown</h2>
+                    <div class="model-content-p">React.js ve Firebase kullanarak geliştirdiğim bir renk üretme
+                        uygulaması.</div>
+                    <a href="https://github.com/sametkoyuncu/react-colortown" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-github"></i>&nbsp;Github
+                    </a>
+                    <a href="https://colortown.netlify.app/colors" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-eye"></i>&nbsp;Önizleme
+                    </a>
+                    <div class="github-card">
+                        <div class="job-time">Daha fazlası için:
+                        </div>
+                        <a href="https://github.com/sametkoyuncu" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-github"></i>&nbsp;@sametkoyuncu
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Yazılarım -->
+            <div class="modal" id="yazilarim">
+                <!-- Add the modal content here -->
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('yazilarim')">
+                        <i class="bi bi-x-circle-fill"></i>
+                    </span>
+                    <h2>Swift’te ‘Delegate Design Pattern’ Nedir? Nasıl Kullanılır?</h2>
+                    <a href="https://medium.com/@sametkoyuncu/swiftte-the-delegate-design-pattern-nedir-nasıl-kullanılır-3e2cd9ea7019"
+                        target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-eye"></i>&nbsp;Yazıyı Oku
+                    </a>
+                    <h2>SideTown Nedir? Nasıl Kullanılır?</h2>
+                    <a href="https://medium.com/@sametkoyuncu/sidetown-nedir-nasıl-kullanılır-84545c5d1fd1"
+                        target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-eye"></i>&nbsp;Yazıyı Oku
+                    </a>
+                    <h2>Değişken Boyuttaki İçeriklerle UIScrollView Kullanımı</h2>
+                    <a href="https://medium.com/@sametkoyuncu/değişken-boyuttaki-i̇çeriklerle-uiscrollview-kullanımı-880d3cbbb631"
+                        target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-eye"></i>&nbsp;Yazıyı Oku
+                    </a>
+                    <div class="github-card">
+                        <div class="job-time">Daha fazlası için:
+                        </div>
+                        <a href="https://medium.com/@sametkoyuncu" target="_blank" rel="noopener noreferrer">
+                            <i class="bi bi-medium"></i>&nbsp;@sametkoyuncu
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script>
+        function openModal(modalId) {
+            const modal = document.getElementById(modalId);
+            modal.style.display = "block";
+            modal.classList.add("slide-up-enter");
+            modal.classList.remove("slide-down-enter");
+            modal.classList.remove("slide-down-exit");
+        }
+
+        function closeModal(modalId) {
+            const modal = document.getElementById(modalId);
+            modal.classList.remove("slide-up-enter");
+            modal.classList.add("slide-down-exit");
+
+            setTimeout(() => {
+                modal.style.display = "none";
+                modal.classList.remove("slide-down-exit");
+            }, 500);
+        }
+    </script>
+</body>
+
+</html>
